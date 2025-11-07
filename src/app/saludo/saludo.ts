@@ -11,5 +11,10 @@ import { TareasComponent } from '../tareas/tareas.component';
   styleUrls: ['./saludo.css']
 })
 export class SaludoComponent {
+  nombreInput: string = '';
   nombre: string = '';
+
+  submitNombre() {
+    this.nombre = this.nombreInput.trim();
+  }
 }

@@ -1,5 +1,9 @@
 <section class="tareas">
   <h3>Tareas</h3>
+  <div style="margin-bottom:12px;">
+    <input [(ngModel)]="newTitle" placeholder="Nueva tarea" (keyup.enter)="agregar()" />
+    <button (click)="agregar()" style="margin-left:8px">Añadir</button>
+  </div>
   <ul>
     <li *ngFor="let t of tareas">
       {{ t.title | capitalize }}
