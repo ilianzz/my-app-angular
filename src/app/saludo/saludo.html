@@ -1,0 +1,8 @@
+<section class="container">
+  <h2>Saludo</h2>
+  <label>Escribe tu nombre:</label><br />
+  <input [(ngModel)]="nombre" placeholder="Tu nombre" />
+  <p *ngIf="nombre" style="margin-top:12px;">Hola {{ nombre }}</p>
+</section>
+
+<app-tareas></app-tareas>

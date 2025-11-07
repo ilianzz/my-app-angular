@@ -1,0 +1,4 @@
+.tareas ul { list-style: none; padding: 0; }
+.tareas li { padding: 8px 0; }
+.tareas button { background: #e74c3c; color: white; border: none; padding: 4px 8px; cursor: pointer; }
+.tareas button:hover { opacity: 0.9; }

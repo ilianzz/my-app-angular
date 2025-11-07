@@ -1,0 +1,10 @@
+<section class="tareas">
+  <h3>Tareas</h3>
+  <ul>
+    <li *ngFor="let t of tareas">
+      {{ t.title | capitalize }}
+      <button (click)="eliminar(t.id)" style="margin-left:12px">Eliminar</button>
+    </li>
+  </ul>
+  <p *ngIf="tareas.length === 0">No hay tareas.</p>
+</section>
